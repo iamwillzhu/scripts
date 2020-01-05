@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import requests
 import sys
 import errno
@@ -26,7 +27,7 @@ def usage(list_of_currencies):
     """
     Display script usage and available currencies
     """
-    print("usage: python3 currency-converter.py <amount> <base_currency> <target_currency>\n")
+    print("usage: ./currency-converter.py <amount> <base_currency> <target_currency>\n")
     print("These are the available currencies:\n")
     for i in range(len(list_of_currencies)):
         if i % 11 == 10:
